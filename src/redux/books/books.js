@@ -1,7 +1,15 @@
+import { v4 as uuidv4 } from 'uuid';
+
 const ADD = 'bookstore/books/ADD';
 const REMOVE = 'bookstore/books/REMOVE';
 
-export default (state = [], action) => {
+const initialState = [
+  { id: uuidv4(), title: 'Javascript', author: 'Naol' },
+  { id: uuidv4(), title: 'Spring Advanced', author: 'Muhe' },
+  { id: uuidv4(), title: 'Angular Basics', author: 'Sidney' },
+];
+
+export default (state = initialState, action) => {
   switch (action.type) {
     case ADD:
       return [...state, action.book];
