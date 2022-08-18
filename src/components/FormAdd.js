@@ -16,7 +16,12 @@ const FormAdd = () => {
   const addBookHandler = (e) => {
     e.preventDefault();
     if (!formValues.title.trim() || !formValues.author.trim()) return;
-    const book = { id: uuidv4(), title: formValues.title, author: formValues.author };
+    const book = {
+      item_id: uuidv4(),
+      title: formValues.title,
+      author: formValues.author,
+      category: 'Fiction',
+    };
     dispatch(addBook(book));
 
     setFormValues({ title: '', author: '' });
