@@ -5,10 +5,12 @@
 ## Built With
 
 - React
+- Redux
+- SCSS
 
-## Live Demo (if available)
+## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://bookstore-amejid.netlify.app/)
 
 ## Getting Started
 
@@ -16,7 +18,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Using it Locally
 
-- Clone the project from GitHub [here](git@github.com:amejid/bookstore.git)
+- Clone the project from GitHub `git clone git@github.com:amejid/bookstore.git`
 - Run the following commands as listed in your terminal:
 - `npm install`
 - `npm start`
